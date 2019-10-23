@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            tools:context=".fragments.AboutFragment">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_about"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:titleTextColor="@android:color/white"
+                app:title="About"
+                app:popupTheme="@style/PopupTheme"
+                android:theme="@style/ToolbarTheme"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_doc"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/newsicon"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NewsDaily"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/img_doc"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Version 1.0)"
+                android:textColor="#99000000"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/txt_name"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/aboutapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NewsDaily, simple news app. You can read daily updated news in different categories and you can share with others."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/version"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/acknowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acknowledgements :"
+                android:textColor="#99000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/aboutapp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ack_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Icon Credit : Flaticon"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/acknowledge"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ack_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- News Source : newsapi.org"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/ack_one"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
